@@ -24,7 +24,7 @@ Well, to be specific: A DHCP server distributes network parameters to DHCP clien
 ## DORA Principle
 To understand what DHCP really does, let's concentrate on the specific events that happen between the DHCP server and DHCP client:<br>
 
-<img src="_assets/Dora_Principle.png" width="254" height="354"><br>
+<img src="/_posts/_assets/Dora_Principle.png" alt="Graphical View of the DORA Principle" width="254" height="354"><br>
 
 - Weg-Zeit-Diagramm (German) means Path-time diagram.
 
