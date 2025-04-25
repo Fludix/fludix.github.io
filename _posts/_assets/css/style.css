@@ -1,0 +1,9 @@
+.resized-image {
+    width: 354px;
+    height: auto;
+  }
+  
+  .resized-image {
+    max-width: 254px;
+    height: auto;
+  }
