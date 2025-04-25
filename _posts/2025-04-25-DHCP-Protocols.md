@@ -20,7 +20,7 @@ This protocol uses the Client-Server architecture.
 > One is the **Prefix**, the other is the **Interface Identifier**. The Prefix shows, which network the address belongs to or what type of address it is.
 > The Interface Identifier identifies the device currently holding the address, which is why every Interface Identifier is unique. 
 > The Prefix and the Interface Identifier are both 64 Bit long. This is how one looks like:
-> Prefix <--- fe80:0bd0:0000:0000|:cd00:000d:0ad0:2423 ---> Interface Identifier
+> Prefix <--- fe80:0bd0:0000:0000 : cd00:000d:0ad0:2423 ---> Interface Identifier
 
 # Now what does DHCP actually do?
 Well, to be specific: A DHCP server distributes network parameters to DHCP clients. By network parameters, I mean stuff like IP Address, Subnet Mask, Default Gateway and the DNS Server. In some cases, it also sends Lease Duration aswell, for an example how long this specific address should be assigned to the client.
