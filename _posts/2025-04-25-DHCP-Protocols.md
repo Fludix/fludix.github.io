@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DHCP Protocols (Not Completed!)
+title: DHCP Protocol
 date: 25-04-2025
 categories: [IT]
 tags: [networking, computer science, dhcp, protocols, english]
