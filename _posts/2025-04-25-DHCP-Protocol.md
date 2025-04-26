@@ -6,7 +6,7 @@ categories: [IT]
 tags: [networking, computer science, dhcp, protocols, english]
 ---
 
-<b>The DHCP Protocol can be very nifty. It is a network protocol that automates the assignment of IP addresses and other network configuration parameters to devices on a network. This eliminates the need for manual configuration, making network administration much easier.</b>
+<b>Tired of manually setting up network details? Then DHCP is your best option. This protocol automates IP address assignment, making network connections effortless. Learn how this silent helper simplifies your internet journey.</b>
 
 # What on earth is DHCP?
 Dynamic Host Configuration Protocol is a network management protocol that allows you to connect a DHCP client to a DHCP server and automatically assign an IP address to the client from the server without having the need to configure it manually.<br>
