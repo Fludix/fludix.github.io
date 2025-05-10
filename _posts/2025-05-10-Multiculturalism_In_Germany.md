@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiculturalism in Germany - The Angel or the Devil?
-date: 10-09-2024
+date: 10-05-2025
 categories: [Politics]
 tags: [english, multiculturalism, culture, foreign politics, politics, discussion, article]
 ---
