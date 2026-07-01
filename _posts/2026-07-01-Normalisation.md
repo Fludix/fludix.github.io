@@ -10,7 +10,6 @@ tags:
   - database
   - normalisation
 ---
-# <b>Relational Database Normalisation: From 1NF to 5NF</b>
 
 The main goal of database normalisation is to reduce data redundancy and prevent **data anomalies** (inconsistencies) during modifications. 
 
@@ -18,8 +17,6 @@ Before we dive into the normal forms, let's look at the three problems we want t
 * **Insertion Anomaly:** You cannot add new data because some required key information is missing.
 * **Update Anomaly:** Changing a value in one place doesn't update it everywhere, leading to contradictory data.
 * **Deletion Anomaly:** Deleting a record accidentally destroys other, unrelated information that you still need.
-
----
 
 ## <b>1st Normal Form (1NF): Atomicity</b>
 **Rule:** Each column must contain atomic (indivisible) values. No multiple values or hidden structures within a single cell.
