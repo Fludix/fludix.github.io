@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — CypherHound</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand"><img src="assets/logo.png" alt="">CypherHound</div>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
+
+<main>
+<article class="doc">
+  <p class="eyebrow">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: July 19, 2026</p>
+
+  <p>
+    This Privacy Policy explains what information CypherHound processes when
+    you use it, and what happens to it.
+  </p>
+
+  <h2>1. What we process when you run a command</h2>
+  <p>To execute a slash command, CypherHound temporarily handles:</p>
+  <ul>
+    <li>The command name and the input you provide (e.g. a domain, IP address, CVE ID, or username);</li>
+    <li>Your Discord user ID and the server (guild) ID, as provided automatically by Discord with every interaction — this is standard for any Discord bot and is not something CypherHound can opt out of receiving.</li>
+  </ul>
+  <div class="callout">
+    As currently built, CypherHound does not write command inputs, results, or
+    user/server IDs to any database or persistent log. Each request is
+    processed in memory and discarded once a response is sent. If that
+    changes — for example, if logging is added for abuse prevention or rate
+    limiting — this policy will be updated to describe what's retained and
+    for how long <em>before</em> that change ships.
+  </div>
+
+  <h2>2. Where your input goes</h2>
+  <p>
+    Depending on the command, your input is forwarded to the relevant public
+    data source to retrieve results:
+  </p>
+  <ul>
+    <li><strong>/whois</strong> — the domain is sent to the relevant public WHOIS registry server;</li>
+    <li><strong>/geoip</strong> — the IP address is sent to ip-api.com;</li>
+    <li><strong>/certs</strong> — the domain is sent to crt.sh (public certificate transparency search);</li>
+    <li><strong>/cve</strong> — the CVE ID is sent to the National Vulnerability Database (nvd.nist.gov);</li>
+    <li><strong>/username</strong> — the handle is checked against each listed platform's public profile URL to determine whether a page exists (no profile content is retrieved or stored).</li>
+  </ul>
+  <p>
+    These are independent third-party services with their own privacy
+    practices, which we don't control. We only send the minimum needed
+    (the query itself) — no additional Discord identifiers are forwarded to
+    them.
+  </p>
+
+  <h2>3. What we don't do</h2>
+  <ul>
+    <li>We do not sell, rent, or share your data with advertisers or data brokers.</li>
+    <li>We do not build profiles of users or servers based on command history.</li>
+    <li>We do not access message content outside of the slash command inputs you explicitly provide.</li>
+  </ul>
+
+  <h2>4. Data retention</h2>
+  <p>
+    Because command inputs and results are not persistently stored (see
+    Section 1), there is generally nothing to retain or delete. Standard
+    Discord platform logs (e.g. gateway connection logs) may exist transiently
+    at the hosting level for operational stability, and are not used for any
+    purpose beyond keeping the bot running.
+  </p>
+
+  <h2>5. Children's privacy</h2>
+  <p>
+    CypherHound is not directed at children and does not knowingly process
+    data from users below Discord's own minimum age requirement (13, or
+    higher where required by local law).
+  </p>
+
+  <h2>6. Your choices</h2>
+  <p>
+    You can stop CypherHound from processing any data associated with you at
+    any time by not using its commands, or by having a server administrator
+    remove the bot from a server.
+  </p>
+
+  <h2>7. Changes to this policy</h2>
+  <p>
+    If our data practices change — most notably, if we begin retaining
+    logs — this page will be updated and the "Last updated" date above will
+    change accordingly.
+  </p>
+
+  <h2>8. Contact</h2>
+  <p>
+    Questions about this policy can be sent to
+    <a href="mailto:contact@example.com">contact@example.com</a> —
+    replace this with your own contact address before publishing.
+  </p>
+</article>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 CypherHound. Not affiliated with Discord Inc.</span>
+  <nav>
+    <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </nav>
+</footer>
+
+</body>
+</html>

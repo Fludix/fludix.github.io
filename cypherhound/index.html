@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CypherHound — recon utilities for Discord</title>
+<meta name="description" content="CypherHound is a keyless Discord bot for public domain, network, and vulnerability lookups.">
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <img src="assets/logo.png" alt="">
+    CypherHound
+  </div>
+  <nav class="site-nav">
+    <a href="#commands">Commands</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <svg class="hero-circuit" viewBox="0 0 1000 480" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,120 L160,120 L200,80 L340,80 L380,120 L520,120 L560,160 L1000,160"></path>
+      <path d="M0,300 L120,300 L160,340 L300,340 L340,300 L620,300 L660,260 L1000,260"></path>
+      <path d="M120,0 L120,80 M340,340 L340,420 M660,0 L660,80 M880,300 L880,420"></path>
+      <circle cx="160" cy="120" r="4"></circle>
+      <circle cx="380" cy="120" r="4" style="animation-delay:1.1s"></circle>
+      <circle cx="560" cy="160" r="4" style="animation-delay:2.3s"></circle>
+      <circle cx="160" cy="340" r="4" style="animation-delay:0.6s"></circle>
+      <circle cx="660" cy="260" r="4" style="animation-delay:1.8s"></circle>
+    </svg>
+
+    <div class="hero-content">
+      <img class="hero-logo" src="assets/logo.png" alt="CypherHound logo">
+      <p class="eyebrow">Discord utility bot</p>
+      <h1 class="hero-title">CypherHound</h1>
+      <p class="hero-sub">
+        Public infrastructure lookups for your server — domains, IPs, certificates,
+        and CVEs. No API keys. No personal-data lookups.
+      </p>
+
+      <div class="terminal">
+        <div class="terminal-bar"><span></span><span></span><span></span></div>
+        <div class="terminal-body" id="commands">
+          <div class="terminal-line"><span class="cmd">/whois example.com</span><span class="desc">— registrar &amp; expiry</span></div>
+          <div class="terminal-line"><span class="cmd">/geoip 8.8.8.8</span><span class="desc">— ISP &amp; location</span></div>
+          <div class="terminal-line"><span class="cmd">/certs example.com</span><span class="desc">— subdomains</span></div>
+          <div class="terminal-line"><span class="cmd">/cve CVE-2024-3094</span><span class="desc">— vulnerability info</span></div>
+          <div class="terminal-line"><span class="cmd">/username handle</span><span class="desc">— platform existence check</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>What it does</h2>
+    <div class="card-grid">
+      <div class="card">
+        <span class="cmd">/whois</span>
+        <p>Domain registration data — registrar, creation and expiry dates, name servers.</p>
+      </div>
+      <div class="card">
+        <span class="cmd">/geoip</span>
+        <p>Approximate location, ISP, and ASN for an IP address, via ip-api.com.</p>
+      </div>
+      <div class="card">
+        <span class="cmd">/certs</span>
+        <p>Subdomains surfaced by public certificate transparency logs (crt.sh).</p>
+      </div>
+      <div class="card">
+        <span class="cmd">/cve</span>
+        <p>Vulnerability details pulled live from the National Vulnerability Database.</p>
+      </div>
+      <div class="card">
+        <span class="cmd">/username</span>
+        <p>Checks whether a handle exists across a handful of major platforms — existence only, no profile data.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Data handling</h2>
+    <p style="color:var(--text-muted); max-width: 40rem;">
+      Every command queries a fixed, public data source at request time — nothing is scraped,
+      stored, or resold. Read the full
+      <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms of service</a>
+      for exactly what's logged and what isn't.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 CypherHound. Not affiliated with Discord Inc.</span>
+  <nav>
+    <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </nav>
+</footer>
+
+</body>
+</html>
